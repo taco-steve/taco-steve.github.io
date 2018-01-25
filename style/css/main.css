@@ -591,16 +591,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -154px);
-          transform: translate(0, -154px);
-  -webkit-animation: fall-3;
-          animation: fall-3;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transform: translate(0, -195px);
+          transform: translate(0, -195px);
+  -webkit-animation: fall-2;
+          animation: fall-2;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s; }
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s; }
 
 .taco-container-2 {
   visibility: hidden;
@@ -609,16 +609,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -243px);
-          transform: translate(0, -243px);
-  -webkit-animation: fall-3;
-          animation: fall-3;
+  -webkit-transform: translate(0, -161px);
+          transform: translate(0, -161px);
+  -webkit-animation: fall-2;
+          animation: fall-2;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s; }
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s; }
 
 .taco-container-3 {
   visibility: hidden;
@@ -627,16 +627,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -221px);
-          transform: translate(0, -221px);
+  -webkit-transform: translate(0, -167px);
+          transform: translate(0, -167px);
   -webkit-animation: fall-3;
           animation: fall-3;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s; }
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s; }
 
 .taco-container-4 {
   visibility: hidden;
@@ -645,12 +645,12 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -216px);
-          transform: translate(0, -216px);
-  -webkit-animation: fall-1;
-          animation: fall-1;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transform: translate(0, -209px);
+          transform: translate(0, -209px);
+  -webkit-animation: fall-3;
+          animation: fall-3;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-duration: 9s;
@@ -663,16 +663,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -208px);
-          transform: translate(0, -208px);
+  -webkit-transform: translate(0, -158px);
+          transform: translate(0, -158px);
   -webkit-animation: fall-2;
           animation: fall-2;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s; }
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s; }
 
 .taco-container-6 {
   visibility: hidden;
@@ -681,10 +681,10 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -225px);
-          transform: translate(0, -225px);
-  -webkit-animation: fall-1;
-          animation: fall-1;
+  -webkit-transform: translate(0, -189px);
+          transform: translate(0, -189px);
+  -webkit-animation: fall-3;
+          animation: fall-3;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
   -webkit-animation-iteration-count: infinite;
@@ -699,12 +699,12 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -181px);
-          transform: translate(0, -181px);
-  -webkit-animation: fall-2;
-          animation: fall-2;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transform: translate(0, -195px);
+          transform: translate(0, -195px);
+  -webkit-animation: fall-3;
+          animation: fall-3;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-duration: 8s;
@@ -717,16 +717,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -178px);
-          transform: translate(0, -178px);
-  -webkit-animation: fall-1;
-          animation: fall-1;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transform: translate(0, -214px);
+          transform: translate(0, -214px);
+  -webkit-animation: fall-2;
+          animation: fall-2;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s; }
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s; }
 
 .taco-container-9 {
   visibility: hidden;
@@ -735,16 +735,16 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -198px);
-          transform: translate(0, -198px);
-  -webkit-animation: fall-3;
-          animation: fall-3;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-transform: translate(0, -173px);
+          transform: translate(0, -173px);
+  -webkit-animation: fall-2;
+          animation: fall-2;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s; }
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s; }
 
 .taco-container-10 {
   visibility: hidden;
@@ -753,8 +753,8 @@ ___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
   display: flex;
   height: 60px;
   border: 0px solid #000;
-  -webkit-transform: translate(0, -181px);
-          transform: translate(0, -181px);
+  -webkit-transform: translate(0, -175px);
+          transform: translate(0, -175px);
   -webkit-animation: fall-2;
           animation: fall-2;
   -webkit-animation-delay: 1s;
@@ -845,7 +845,7 @@ ___  ___ ___________ _____  ___    _____ _   _ ___________ _____ _____ _____
 | |  | || |___| |/ / _| |_| | | | \ \/' / |_| | |___| |\ \ _| |_| |___/\__/ /
 \_|  |_/\____/|___/  \___/\_| |_/  \_/\_\___/\____/\_| \_|\___/\____/\____/
 */
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .falling-tacos {
     display: none; } }
 @media (min-width: 750px) {
