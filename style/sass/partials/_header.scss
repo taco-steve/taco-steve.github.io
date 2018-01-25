@@ -1,0 +1,52 @@
+/*
+ _   _  _____  ___ ______ ___________
+| | | ||  ___|/ _ \|  _  \  ___| ___ \
+| |_| || |__ / /_\ \ | | | |__ | |_/ /
+|  _  ||  __||  _  | | | |  __||    /
+| | | || |___| | | | |/ /| |___| |\ \
+\_| |_/\____/\_| |_/___/ \____/\_| \_|
+*/
+
+header {
+  @include flex-box(flex, column, center, center);
+  min-height: 300px;
+  margin: 5vh auto auto;
+  // 'talk bubble'
+  .chat-bubble {
+    @include font(normal, 1.3em, $heading-font-fam);
+    @include text($site-color-black, $spacing: 1.2px, $align: center);
+    animation: chat-bubble 1s;
+    visibility: hidden;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+    position: relative;
+    margin: 10px 0 0;
+    padding: 10px;
+    border: 5px solid $site-color-black;
+    border-radius: 15px;
+    background: #fff;
+    &:before {
+      @include position(absolute, auto, 60px, auto, -46px);
+      content: ' ';
+      width: 0;
+      height: 0;
+      border: 23px solid;
+      border-color: $site-color-black transparent transparent transparent;
+    }
+    &:after{
+      @include position(absolute, 0, 63px, auto, -36px);
+      content: ' ';
+      width: 0;
+      height: 0;
+      border: 20px solid;
+      border-color: #fff transparent transparent transparent;
+    }
+  }
+}
+
+.steve-logo {
+  display: flex;
+  min-width: 200px;
+  max-width: 450px;
+  padding: 10px;
+}

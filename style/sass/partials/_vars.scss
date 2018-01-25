@@ -1,0 +1,29 @@
+//  _   _  ___  ______ _____  ___  ______ _      _____ _____
+// | | | |/ _ \ | ___ \_   _|/ _ \ | ___ \ |    |  ___/  ___|
+// | | | / /_\ \| |_/ / | | / /_\ \| |_/ / |    | |__ \ `--.
+// | | | |  _  ||    /  | | |  _  || ___ \ |    |  __| `--. \
+// \ \_/ / | | || |\ \ _| |_| | | || |_/ / |____| |___/\__/ /
+//  \___/\_| |_/\_| \_|\___/\_| |_/\____/\_____/\____/\____/
+//
+
+$site-bg-color: #fcf0df;
+$site-bg-active: rgba(178, 180, 202, 0.7699);
+$site-color-white: #eaeaeb;
+$site-color-black: #333;
+
+$section-bg-gradient: linear-gradient(to bottom left, #42444b 35%, #2E3038);
+$section-header-text-color: $site-color-black;
+$section-header-shadow-color: #377433;
+$section-header-shadow: 4px 8px 0 $section-header-shadow-color;
+$section-header-gradient: linear-gradient(to bottom left, #6fe967 25%, #8bed85);
+$section-border-gradient: linear-gradient(to top, #42444b, #2E3038);
+$section-text-color: $site-color-white;
+
+$button-bg-color: #f19321;
+$button-text-color: #fff;
+$button-shadow-color: #910707;
+
+$red-highlight: #dd2323;
+$general-text-shadow: 1px 1px 0 #222;
+$general-font-fam:'Roboto Condensed', sans-serif;
+$heading-font-fam: 'Permanent Marker', cursive;

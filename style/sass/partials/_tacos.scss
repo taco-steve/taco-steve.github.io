@@ -1,0 +1,87 @@
+.falling-tacos {
+  position: absolute;
+  border: 0px solid #000;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.taco {
+  // background-color: #f19321;
+  background-image: url('../../imgs/taco-test.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin: 0;
+  transform: rotate(-45deg);
+}
+
+@for $i from 1 through 10 {
+  $timing: (random(3) + 6) + s;
+  $animation: fall-#{random(3)};
+  .taco-container-#{$i} {
+    visibility: hidden;
+    display: flex;
+    height: 60px;
+    border: 0px solid #000;
+    transform: translate(0, - (random(100) + 144) + px);
+    animation: $animation;
+    // animation: fall-3;
+    animation-delay: random(7) + s;
+    animation-iteration-count: infinite;
+    animation-duration: $timing;
+  }
+}
+
+@keyframes fall-1 {
+  0% {
+    visibility: visible;
+    transform: translate(initial);
+  }
+  40% {
+    opacity: 0.8
+  }
+  100% {
+    transform: translate(0, 101vh) rotate3d(0, 0, -1, -180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fall-2 {
+  0% {
+    visibility: visible;
+    transform: translate(initial);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 101vh) rotate3d(0, 0, 2, 90deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fall-3 {
+  0% {
+    visibility: visible;
+    transform: translate(initial);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 101vh) rotate3d(0, 0, 2, -100deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

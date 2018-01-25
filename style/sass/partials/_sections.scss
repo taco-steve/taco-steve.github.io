@@ -1,0 +1,246 @@
+/*
+ _____ _____ _____ _____ _____ _____ _   _  _____
+/  ___|  ___/  __ \_   _|_   _|  _  | \ | |/  ___|
+\ `--.| |__ | /  \/ | |   | | | | | |  \| |\ `--.
+ `--. \  __|| |     | |   | | | | | | . ` | `--. \
+/\__/ / |___| \__/\ | |  _| |_\ \_/ / |\  |/\__/ /
+\____/\____/ \____/ \_/  \___/ \___/\_| \_/\____/
+*/
+
+.steve-menu,
+.steve-contact {
+  @include flex-box($dir: column, $justify: center, $align-items: center);
+  @include text($section-text-color);
+  @include position(absolute, 0, 0, $top: 0, $bottom: 0);
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px;
+  border-radius: 0;
+  border: 10px solid;
+  border-image: $section-border-gradient;
+  border-image-slice: 1;
+  background: $section-bg-gradient;
+  transition: all 0.3s;
+  transform: translate(-5%, 0);
+}
+
+.section-header {
+  @include flex-box($type: flex, $justify: center, $align-items: center);
+  @include font($fam: $heading-font-fam, $weight: normal);
+  @include text($section-header-text-color, 1.1px, center);
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: $section-header-shadow;
+  background: $section-header-gradient;
+}
+
+.back-button {
+  @include button(4px 8px 0, auto);
+  @include position(absolute, 13px, $bottom: 55px);
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  transition: all .5s, box-shadow 0.15s;
+  transform: translate(0, 100px);
+}
+
+.back-button-visible {
+  opacity: 0.89;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+
+.section-active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.dark-bg {
+  background: $site-bg-active;
+  overflow-y: visible;
+}
+
+/*
+___  ___ _____ _   _ _   _   _____ _____ _____ _____ _____ _____ _   _
+|  \/  ||  ___| \ | | | | | /  ___|  ___/  __ \_   _|_   _|  _  | \ | |
+| .  . || |__ |  \| | | | | \ `--.| |__ | /  \/ | |   | | | | | |  \| |
+| |\/| ||  __|| . ` | | | |  `--. \  __|| |     | |   | | | | | | . ` |
+| |  | || |___| |\  | |_| | /\__/ / |___| \__/\ | |  _| |_\ \_/ / |\  |
+\_|  |_/\____/\_| \_/\___/  \____/\____/ \____/ \_/  \___/ \___/\_| \_/
+*/
+
+.steve-menu {
+  h2 {
+    @include font(normal, $fam: $heading-font-fam);
+    @include text($shadow: $general-text-shadow);
+    display: inline-block;
+    margin: 10px 10px 5px;
+    border-bottom: 2px solid #eaeaeb;
+  }
+  h4 {
+    @include text($align: center);
+  }
+  ul {
+    @include text($align: center);
+    list-style: none;
+    margin: 0 10px 10px;
+    padding: 0;
+    li {
+      margin: 7px;
+      font-size: 1.189em;
+    }
+  }
+}
+
+.steve-menu-sides,
+.steve-menu-bevs,
+.steve-menu-entrees {
+  width: 100%;
+}
+
+.meat-options {
+  @include font($size: 1.28em);
+  @include text($align: center, $decor: underline);
+}
+
+.menu-item {
+  margin: 10px 10px 10px;
+  p {
+    margin: 0;
+  }
+  .name-and-price {
+    @include flex-box($type: flex, $justify: space-between);
+    margin-bottom: 7px;
+    border-bottom: 2px dotted #eaeaeb;
+    text-shadow: $general-text-shadow;
+  }
+  .item-name {
+    @include font($size: 1.2em);
+
+  }
+  .item-description {
+    margin-left: 10px;
+  }
+}
+
+.beer {
+    @include text($align: center);
+  }
+
+.menu-notice {
+  margin: 10px;
+}
+
+/*
+ _____ _____ _   _ _____ ___  _____ _____   _____ _____ _____ _____ _____ _____ _   _
+/  __ \  _  | \ | |_   _/ _ \/  __ \_   _| /  ___|  ___/  __ \_   _|_   _|  _  | \ | |
+| /  \/ | | |  \| | | |/ /_\ \ /  \/ | |   \ `--.| |__ | /  \/ | |   | | | | | |  \| |
+| |   | | | | . ` | | ||  _  | |     | |    `--. \  __|| |     | |   | | | | | | . ` |
+| \__/\ \_/ / |\  | | || | | | \__/\ | |   /\__/ / |___| \__/\ | |  _| |_\ \_/ / |\  |
+ \____/\___/\_| \_/ \_/\_| |_/\____/ \_/   \____/\____/ \____/ \_/  \___/ \___/\_| \_/
+*/
+
+.steve-contact {
+  p {
+    @include text($align: center);
+    margin-top: 21.280px;
+  }
+  h3,
+  h4 {
+    @include text($align: center);
+  }
+  h3 {
+    @include font(normal, $fam: $heading-font-fam);
+    @include text($shadow: $general-text-shadow);
+    margin-bottom: 0;
+  }
+  h5 {
+    margin: 10px 0;
+  }
+  small {
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.social-media {
+  @include flex-box($type: flex, $justify: center, $align-items: center);
+  h1 {
+    @include text($align: center);
+    margin: 0 10px;
+  }
+  h3 {
+    margin: 20px;
+  }
+  .social-media-logos {
+    @include flex-box($type: flex, $justify: center, $align-items: center);
+    margin: 20px;
+  }
+  .fb {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+  }
+  .yelp {
+    height: 84.8px;
+    width: 147.4px;
+    padding: 10px;
+  }
+}
+
+.hours {
+  @include flex-box(flex, column, center, center);
+  width: auto;
+  h2 {
+    @include font(normal, 1.3em, $heading-font-fam);
+    @include text($align: center, $shadow: $general-text-shadow);
+    margin-bottom: 0;
+  }
+  ul {
+    min-width: 4em;
+    list-style: none;
+    padding: 0;
+    li {
+      @include flex-box(flex, $justify: space-between);
+      border-bottom: 2px dotted #333;
+    }
+  }
+  .hours-day {
+    @include font(600, 1.2em);
+    display: inline-flex;
+    align-self: flex-start;
+    min-width: 130px;
+  }
+  .hours-time {
+    @include flex-box($type: inline-flex, $justify: flex-end);
+    @include font(bold);
+    min-width: 130px;
+  }
+}
+
+.phone,
+.address {
+  @include font(600, 1.5em);
+  @include text(#6fe967, $shadow: $general-text-shadow);
+}
+
+.closed {
+  @include text($red-highlight, $shadow: $general-text-shadow);
+}
+
+.address {
+  @include font($size: 1.2em);
+}
+
+#map {
+  min-height: 325px;
+  width: 100%;
+}

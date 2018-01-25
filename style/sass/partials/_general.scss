@@ -1,0 +1,59 @@
+/*
+ _____  _____ _   _  ___________  ___   _
+|  __ \|  ___| \ | ||  ___| ___ \/ _ \ | |
+| |  \/| |__ |  \| || |__ | |_/ / /_\ \| |
+| | __ |  __|| . ` ||  __||    /|  _  || |
+| |_\ \| |___| |\  || |___| |\ \| | | || |____
+ \____/\____/\_| \_/\____/\_| \_\_| |_/\_____/
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  font-family: $general-font-fam;
+  background: $site-bg-color;
+  background: radial-gradient(circle, $site-bg-color 45%, #c9c2b6);
+}
+
+.site-wrapper {
+  @include flex-box(flex, column, center, center);
+  margin: auto;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  animation: fade-in 1.6s;
+  transition: background 0.4s;
+}
+
+.button-wrangler{
+  @include position(fixed, 0, 0, $bottom: 0);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.logo-img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+article {
+  @include flex-box(flex, column, $align-items: center);
+}
+
+a {
+  text-decoration: none;
+}

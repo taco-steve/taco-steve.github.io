@@ -1,0 +1,97 @@
+/*
+___  ___ ___________ _____  ___    _____ _   _ ___________ _____ _____ _____
+|  \/  ||  ___|  _  \_   _|/ _ \  |  _  | | | |  ___| ___ \_   _|  ___/  ___|
+| .  . || |__ | | | | | | / /_\ \ | | | | | | | |__ | |_/ / | | | |__ \ `--.
+| |\/| ||  __|| | | | | | |  _  | | | | | | | |  __||    /  | | |  __| `--. \
+| |  | || |___| |/ / _| |_| | | | \ \/' / |_| | |___| |\ \ _| |_| |___/\__/ /
+\_|  |_/\____/|___/  \___/\_| |_/  \_/\_\\___/\____/\_| \_|\___/\____/\____/
+*/
+
+@media (min-width: 750px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .logo-img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  header {
+    margin: auto;
+  }
+
+  .site-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .steve-menu,
+  .steve-contact {
+    @include position(absolute, unset, unset, $bottom: inherit);
+    padding-bottom: 10px;
+    border-width: 15px;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      width: 0.08em;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #000;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255 ,255 ,255, 0.6);
+    }
+  }
+
+  .section-active {
+    height: auto;
+  }
+
+  .sides-and-bevs {
+    @include flex-box($type: flex, $justify: space-around);
+    width: 100%;
+  }
+
+  .steve-menu-sides,
+  .steve-menu-bevs {
+    @include flex-box($type: flex, $dir: column, $basis: 45%);
+    width: 45%;
+  }
+
+  .steve-menu-entrees {
+    h2 {
+      @include text($align: left);
+      display: block;
+    }
+  }
+
+  .hours {
+    .hours-day {
+      min-width: 150px;
+    }
+
+    .hours-time {
+      min-width: 300px;
+      justify-content: flex-end;
+    }
+  }
+
+  .back-button {
+    right: 30px;
+  }
+
+  #map {
+    min-height: 500px;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .hidden-sm {
+    display: none;
+  }
+}

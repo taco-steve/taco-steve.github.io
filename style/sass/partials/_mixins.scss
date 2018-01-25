@@ -1,0 +1,55 @@
+// ___  __________   _______ _   _  _____
+// |  \/  |_   _\ \ / /_   _| \ | |/  ___|
+// | .  . | | |  \ V /  | | |  \| |\ `--.
+// | |\/| | | |  /   \  | | | . ` | `--. \
+// | |  | |_| |_/ /^\ \_| |_| |\  |/\__/ /
+// \_|  |_/\___/\/   \/\___/\_| \_/\____/
+//
+
+@mixin flex-box($type: null, $dir: null, $justify: null, $align-items: null, $basis: null) {
+  display: $type;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align-items;
+  flex-basis: $basis;
+}
+
+@mixin text($color: null, $spacing: null, $align: null, $decor: null, $shadow: null) {
+  color: $color;
+  letter-spacing: $spacing;
+  text-align: $align;
+  text-decoration: $decor;
+  text-shadow: $shadow;
+}
+
+@mixin font($weight: null, $size: null, $fam: null) {
+  font-family: $fam;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin position($pos: null, $right: null, $left: null, $top: null, $bottom: null) {
+  position: $pos;
+  right: $right;
+  left: $left;
+  top: $top;
+  bottom: $bottom;
+}
+
+@mixin button($shadow, $min) {
+  @include flex-box(inline-flex, $justify: center, $align-items: center);
+  @include font(normal, $fam: $heading-font-fam);
+  @include text($button-text-color, 1.1px, $decor: none);
+  padding: 10px;
+  margin: 5px;
+  min-width: $min;
+  height: 45px;
+  background: $button-bg-color;
+  box-shadow: $shadow $button-shadow-color;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+  &:active {
+    box-shadow: 2px 3px 0 $button-shadow-color;
+    transform: translate(0, 5px);
+  }
+}
