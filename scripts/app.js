@@ -3,13 +3,13 @@
 // google maps setup
 window.initMap = function() {
   let map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 38.2875009, lng: -85.8175687 },
+    center: { lat: 38.286748, lng: -85.822597 },
     zoom: 19,
     disableDefaultUI: true,
     scrollwheel: false
   });
   let marker = new google.maps.Marker({
-    position: { lat: 38.287483, lng: -85.817553 },
+    position: { lat: 38.286748, lng: -85.822597 },
     map: map,
     title: 'Taco Steve!',
     icon: {
